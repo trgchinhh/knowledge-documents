@@ -168,17 +168,17 @@ Còn Blockchain thì ngược lại, nhờ tính minh bạch và bất biến n�
 
 
 ## Ưu và nhược điểm 
-Ưu điểm: 
-    - Phi tập trung: không phụ thuộc một máy chủ hay bên trung gian<br> 
-    - Bất biến: dữ liệu đã ghi vào Block gần như không thể sửa<br>
-    - Minh bạch: mọi Node đều có thể xác minh giao dịch<br>
-    - Chống giả mạo: Cơ chế đồng thuận (PoW) và chữ ký số (RSA)<br> 
-Nhược điểm: 
-    - Hiệu năng thấp<br>
-    - Tốn tài nguyên: PoW tiêu thụ nhiều điện năng cho máy đào và sức tính toán<br> 
-    - Dung lượng cao: mỗi Node phải lưu toàn bộ lịch sử<br>
-    - Dễ mất tài sản: mất private-key coi như mất tài sản vĩnh viễn<br> 
-    - Phức tạp: triển khai và bảo trì khó hơn database truyền thống<br>
+- Ưu điểm: 
+    - Phi tập trung: không phụ thuộc một máy chủ hay bên trung gian 
+    - Bất biến: dữ liệu đã ghi vào Block gần như không thể sửa
+    - Minh bạch: mọi Node đều có thể xác minh giao dịch
+    - Chống giả mạo: Cơ chế đồng thuận (PoW) và chữ ký số (RSA) 
+- Nhược điểm: 
+    - Hiệu năng thấp 
+    - Tốn tài nguyên: PoW tiêu thụ nhiều điện năng cho máy đào và sức tính toán 
+    - Dung lượng cao: mỗi Node phải lưu toàn bộ lịch sử 
+    - Dễ mất tài sản: mất private-key coi như mất tài sản vĩnh viễn 
+    - Phức tạp: triển khai và bảo trì khó hơn database truyền thống 
 
 
 ## Kết luận
