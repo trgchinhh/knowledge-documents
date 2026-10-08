@@ -3,6 +3,21 @@
 ## Git là gì ?
 Git là 1 công cụ quản lý phiên bản phân tán được Linus Tovard cha đẻ của Linux Kernel tạo ra
 
+Minh họa nhánh Git
+```txt
+                      Test Feature 1
+               (Y)----(Y)----(Y)----(Y)---                                                [HEAD]
+              /                           \                                                 |
+             /                             \                                                v
+    (M)-----+-----(M)-----(M)-+---(M)-------(M)-----(M)-----(M)-----(M)------+-----(M)-----(M)
+    Main            \          \                           /                /
+                     \          \                         /                /
+                      \          (S)----(S)----(S)----(S)-                /
+                       \              Test Feature 2                     /
+                        \                                               /
+                         (T)--------(T)--------(T)--------(T)--------(T)
+                                        Test Feature 3
+```
 
 ## Git được dùng để làm gì ?
 Git được dùng chính thức trong quản lý phiên bản mã nguồn trên máy của bạn, mỗi thay đổi ở hiện tại khi lưu lại thì git như 1 máy ảnh chúng chụp lại những thay đổi đó, nó giúp bạn xem lại được những thay đổi và quay lại phiên bản mong muốn mà không phải lưu code ở nhiều chổ. Ngoài ra git có thể tạo nhiều nhánh để thực hiện trong nhiều việc khác như tạo 1 tính năng khác mà không muốn viết trên nhánh chính ta có thể tạo thêm 1 nhánh test lúc này ta có 2 luồng làm việc song song mà không sợ code xung đột với nhau. 
@@ -15,6 +30,19 @@ Nếu dùng các công cụ quản lý gói trên terminal như Winget, Scoop ha
 - Nếu dùng Scoop: `scoop install git`
 - Nếu dùng Choco: `choco install git -y`
 > Riêng với cách cài bằng công cụ quản lý gói thì nó sẽ set path trong biến môi trường mà không cần cài thủ công
+
+Mô phỏng quy trình hoạt động
+```txt
+ Working Dir        Staging Area         Local Repo         Remote (GitHub)
+      |                  |                   |                    |
+      |------ add ------>|                   |                    |
+      |                  |----- commit ----->|                    |
+      |                  |                   |------- push ------>|
+      |                  |                   |<----- fetch -------|
+      |<---------- merge / checkout ---------|                    |
+      |<-------------------- pull (fetch + merge) ----------------|
+      |<-------------------- clone (tải toàn bộ) -----------------|
+```
 
 ### Các lệnh cơ bản 
 - Lệnh `git init`: tạo kho lưu trữ phiên bản tại dự án
