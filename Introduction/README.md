@@ -80,3 +80,7 @@ Có tổng 3 môi trường: GUI, CLI, TUI
     - Là môi trường như trong terminal chỉ có viết lệnh để cho Shell xử lý lệnh của bạn và thực thi, như g++, python
 - TUI (Text-based User Interface): môi trường giao diện dạng văn bản
     - Là môi trường trong terminal nhưng dùng các ký tự văn bản vẽ thành các bố cục có cấu trúc menu, cửa sổ, nút, bảng, có thể điều khiển bằng chuột hoặc phím như một ứng dụng GUI, như neovim, btop, cava, lazygit, tuistore
+
+
+## Tổng kết
+Nắm được hết những thứ vừa rồi cũng đã giúp bạn hiểu chắc hơn về ngành học của mình. Chặng đường phía trước còn nhiều thứ phải học, cứ bình tĩnh học chắc từng thứ một, luôn chủ động học trước mọi thứ sẽ có lợi thế và thời gian nhiều hơn về sau, luôn phải thực hành nhiều hơn lý thuyết vì thực hành mới nhớ nhiều. Cuối cùng chúc các bạn thành công 
