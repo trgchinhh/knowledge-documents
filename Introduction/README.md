@@ -8,6 +8,42 @@ Việc trang bị trước những kiến thức này giúp bạn hiểu rõ hơ
 Lập trình là lập ra trình tự thường dùng trong ngữ cảnh có máy tính, ám chỉ việc viết những dòng lệnh sao cho máy tính hiểu và chạy được đoạn mã đó. Viết mã cũng cần phải có ứng dụng dành riêng cho việc đó, tiếp theo chúng ta cùng tìm hiểu về công cụ viết mã     
 
 
+## Hello World 
+In ra dòng Hello World trong những ngôn ngữ phổ biến hiện nay 
+C++
+```cpp
+#include <iostream>
+using namespace std;
+
+int main(){
+    cout << "Hello World" << endl;
+    return 0;
+}
+```
+C#
+```cs
+Console.WriteLine("Hello World");
+```
+Java
+```java
+public class Program {
+    public static void main(String[] args){
+        System.out.println("Hello World");
+    }
+}
+```
+
+Python 
+```py
+print("Hello World")
+```
+
+JavaScript
+```js
+Console.log("Hello World")
+```
+
+
 ## Công cụ viết mã
 Việc viết mã cùng cần đến những công cụ (app riêng) sinh ra cho các coder/dev, đánh dấu và tô màu các cú pháp, từ khóa làm nổi bật lên giúp ta quan sát code dễ dàng hơn hoặc thậm chí khi có lỗi 
 Chúng còn chia làm 2 nhánh riêng biệt 
@@ -83,4 +119,4 @@ Có tổng 3 môi trường: GUI, CLI, TUI
 
 
 ## Tổng kết
-Nắm được hết những thứ vừa rồi cũng đã giúp bạn hiểu chắc hơn về ngành học của mình. Chặng đường phía trước còn nhiều thứ phải học, cứ bình tĩnh học chắc từng thứ một, luôn chủ động học trước mọi thứ sẽ có lợi thế và thời gian nhiều hơn về sau, luôn phải thực hành nhiều hơn lý thuyết vì thực hành mới nhớ nhiều. Cuối cùng chúc các bạn thành công 
+Nắm được hết những thứ vừa rồi cũng đã giúp bạn hiểu chắc hơn về ngành học của mình. Chặng đường phía trước còn nhiều thứ phải học, cứ bình tĩnh học chắc từng thứ một, luôn chủ động học trước mọi thứ sẽ có lợi thế và thời gian nhiều hơn về sau, luôn phải thực hành nhiều hơn lý thuyết vì thực hành mới nhớ nhiều. Cuối cùng chúc các bạn thành công
