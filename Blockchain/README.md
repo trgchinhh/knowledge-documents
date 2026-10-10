@@ -6,6 +6,17 @@ Trước hết tìm hiểu về Blockchain, chúng ta sẽ tìm hiểu Hash, 1 c
 
 ## Hash là gì ?
 Hash (băm) là hàm băm 1 chiều, khác với mã hóa có giải mã song song thì băm không thể nào giải mã được
+
+Minh họa hàm băm
+```txt
+    +------+       +---------------+       +-----------+
+    | Data | ----> | Hash function | ----> | Hash code |
+    +------+       +---------------+       +-----------+
+
+    +-----------+        +------+
+    | Hash code | --x--> | Data |
+    +-----------+        +------+
+```
 - Mục đích: dùng để kiểm tra tính toàn vẹn, định danh của nội dung 
 - Các loại hash phổ biến hiện nay
     + SHA-256/SHA-512 [độ dài: 256/512 bit]: phổ biến, độ dài an toàn 
@@ -101,7 +112,23 @@ khi 1 Block mới đã có data nó chưa được thêm vào Chain ngay mà ph�
 Bài toán có thể là mã Hash của Block khi tính ra thì phải cộng với 1 số ngẫu nhiên nào đó sao cho đầu mã Hash có 5 số 0 (đây là độ khó của bài toán) được gọi là Difficulty
 Làm sao để biết được số ngẫu nhiên là số nào ? Không còn cách nào khác ngoài thử từng số 1 bắt đầu từ 0, đó cũng chính là số Nonce trong Block 
 Số Nonce trong thật tế để tìm được có thể lên đến hàng tỷ, vì thế cần có dàn máy tính khủng nhiều GPU hay máy đào chuyên dụng
-Quá trình đó được gọi là đào 
+
+Minh họa quá trình đào
+```txt
+     +--------+   +--------+   +--------+   +--------+
+     | GPU 1  |   | GPU 2  |   | GPU 3  |   | GPU n  |
+     | nonce  |   | nonce  |   | nonce  |   | nonce  |
+     | 0..1M  |   | 1M..2M |   | 2M..3M |   |  ...   |
+     +--------+   +--------+   +--------+   +--------+
+          \            |            |            /
+           \           |            |           /
+            +----------+-----+------+----------+
+                             |
+                             v
+                  Ai tìm ra nonce đúng trước
+              thì thằng và nhận hoa hồng bằng BTC
+```
+=> Quá trình đó được gọi là đào 
 
 Trở lại ví dụ hồi nảy 
 - Khi 1 người cố ý thay đổi 1 giá trị giao dịch trong 1 Block không chỉ phải Hash lại Block đó mà còn phải Hash tất cả các Block phía sau theo chuẩn PoW của hệ thống đưa ra 
